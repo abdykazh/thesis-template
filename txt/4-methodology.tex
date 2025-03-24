@@ -420,6 +420,7 @@ The initial version will be installed as specified in the versions and release d
     \end{itemize}
 \end{itemize}
 
+For the installation Autrhorized Cluster Endpoint from Rancher, as explained in the background to directly access Kubernetes cluster.
 
 \clearpage
 \section{Concept of usage in a live production environment}
@@ -440,7 +441,7 @@ The ClusterOutput is configured to send logs in GELF format, specifying the Gray
 
 \begin{figure}[h]
         \centering
-        \includegraphics[scale=0.9]{img/2-background/centralized_logging/flows_output.png}
+        \includegraphics[scale=0.9]{img/3-background/centralized_logging/flows_output.png}
         \caption{Log Routing within Kubernetes cluster. Source: https://kube-logging.dev/docs/img/logging-operator-v2-architecture.png (adjusted) (accessed: 01.03.2025) }
         \label{fig:flows_output}
 \end{figure}
@@ -474,7 +475,7 @@ All forwarded logs are enriched with additional Kubernetes metadata (Figure \ref
 
 \begin{figure}[h]
         \centering
-        \includegraphics[scale=0.6]{img/2-background/centralized_logging/message.png}
+        \includegraphics[scale=0.6]{img/3-background/centralized_logging/message.png}
         \caption{ }
         \label{fig:message}
 \end{figure}
@@ -482,7 +483,7 @@ All forwarded logs are enriched with additional Kubernetes metadata (Figure \ref
 
 \begin{figure}[h]
         \centering
-        \includegraphics[]{img/2-background/centralized_logging/log_operator_flows.png}
+        \includegraphics[]{img/3-background/centralized_logging/log_operator_flows.png}
         \caption{https://axoflow.com/wp-content/uploads/2023/11/logging-operator-multi-tenancy-2.png }
         \label{fig:log_operator_flows}
 \end{figure}

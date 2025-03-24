@@ -8,7 +8,7 @@
 
 \subsection{Graylog}
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \begin{tabular}{|c|c|c|c|c|c|c|}
         \hline
@@ -49,7 +49,7 @@
 \end{table}
 
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \begin{tabular}{|c|c|c|c|c|c|c|}
         \hline
@@ -87,7 +87,7 @@
 
 \subsection{Graylog Major Updates Only}
 
-\begin{table}[h]
+\begin{table}[H]
     \centering
     \begin{tabular}{|c|c|c|c|c|c|c|}
         \hline
@@ -170,9 +170,9 @@ The installation script and table can be found in the Git repository https://git
 The Rancher Logging App presents two versions \ref{fig:chart}: \texttt{104.1.0+up4.8.0} and \texttt{104.0.0+up4.4.0}. 
 However, several problems arose during the installation.
 
-\begin{figure}[h]
+\begin{figure}[H]
         \centering
-        \includegraphics[]{img/4-results/chart.png}
+        \includegraphics[]{img/5-results/chart.png}
         \caption{ }
         \label{fig:chart}
 \end{figure}
@@ -184,9 +184,9 @@ On the dev cluster, the installation was unsuccessful, even though the same step
 
 After manually searching for available images https://hub.docker.com/u/rancher, the latest versions were used, which finally led to a successful installation.
 
-\begin{figure}[h]
+\begin{figure}[H]
         \centering
-        \includegraphics[]{img/4-results/values_images.png}
+        \includegraphics[]{img/5-results/values_images.png}
         \caption{ }
         \label{fig:values_images}
 \end{figure}
@@ -207,9 +207,9 @@ Internally, there is no 24/7 on-call support. While this is not an issue for int
 
 Applications can be upgraded either through CLI or directly though Rancher Apps that takes Helm charts from internal Git repository. Rancher \gls{ui} shows that App is upgradable as soon it is available, which can be installed per click. Since charts come from internal repository, no further modifications to values.yaml should be neccessary.
 
-\begin{figure}[h]
+\begin{figure}[H]
         \centering
-        \includegraphics[scale=0.6]{img/2-background/rancher/rancher_update_graylog.png}
+        \includegraphics[scale=0.6]{img/3-background/rancher/rancher_update_graylog.png}
         \caption{Upgradable app on Rancher UI.}
         \label{fig:rancher_update_graylog}
 \end{figure}
