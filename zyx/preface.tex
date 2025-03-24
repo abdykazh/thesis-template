@@ -12,7 +12,7 @@
  {\LARGE \textsc{\myUniversity}}\\[0.8em]
  {\Large \textsc{\myDepartment}}
  \vfill
- \includegraphics[scale=1.5]{img/HM_Logo_rot_RGB}
+ \includegraphics[scale=1.5]{img/logo/HM_Logo_rot_RGB}
  \vfill
  {\Large \myThesisType}\\[0.8em]
  {\ifthenelse{\equal{\mylanguage}{de}}{\Large zur Erlangung des Grades}{\Large for obtaining the academic degree of}}\\[0.8em]
@@ -22,14 +22,15 @@
  \begin{spacing}{1.1}
   \Huge \bfseries \myTitle
  \end{spacing}
-
- \ifthenelse{\equal{\mylanguage}{en}}{ \begin{spacing}{1.1}
- 		\Huge \bfseries \myTitleNative
- \end{spacing}
-  }{\vfill}
-
+ {\vfill}
+ {\Large 
+ \ifthenelse{\equal{\mylanguage}{de}}{in Kooperation mit}{in cooperation with}}
  \vfill
+ \vspace{0.8em} % Space instead of `\\`
+ {\Large \myCompany} 
+ \vspace{0.8em} % Space instead of `\\`
  \vfill
+ \includegraphics[scale=0.5]{img/logo/FI-SP_Logo.png}
  \vfill
  \noindent\rule{\textwidth}{1pt}
  \vfill
@@ -41,6 +42,7 @@
  	\ifthenelse{\equal{\mylanguage}{de}}{Matrikelnummer}{Matriculation number}: & \myNumber      \\
 	\ifthenelse{\equal{\mylanguage}{de}}{Abgabedatum}{Submission Date}:         & \myEndDate     \\
 	\ifthenelse{\equal{\mylanguage}{de}}{Aufgabensteller}{Supervisor}:          & \myReviewFirst \\
+    \ifthenelse{\equal{\mylanguage}{de}}{Aufgabensteller}{Supervisor}:          & \myReviewSecond \\
 	\ifthenelse{\equal{\mylanguage}{de}}{Betreuer}{Advisor}:                    & \myAdvisor     \\
  \end{tabularx}
  \endgroup
