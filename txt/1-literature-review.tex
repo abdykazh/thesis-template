@@ -1,0 +1,35 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\chapter{Literature Review}
+
+\section{Related Work}
+
+A log management orchestration framework designed for containerized environments was proposed by Kandan et.al \cite{clof}. The paper discussed the challenges faced by any log management system in a containerized environment, reviewed available log management tools, and proposed a framework. Graylog was highlighted as a tool for visualizing logs and Fluentd as a log forwarder.
+
+Yahya Al-Dhuraibi et al. \cite{verticalelasticity} researched the vertical elasticity of Docker containers by conducting experiments with Graylog. They evaluated the performance by measuring response time, CPU usage, and memory consumption of the Graylog server.
+
+A 2022 study evaluated the performance of the ELK Stack versus Graylog. The ELK Stack, comprising Elasticsearch, Logstash, Kibana and others, provides an integrated solution for log management \cite{elk}. The study found that while ELK is powerful, Graylog was easier to maintain and more suitable for centralized log management, particularly for security and alerting purposes. Additionally, Graylog offers out-of-the-box functionalities with minimal configuration. The authors point out that selecting the right solution depends on the specific requirements and logging needs of the user. Future research may involve a more in-depth feature analysis to gain insights that closely align with real-world scenarios. \cite{elkvsgraylog}
+
+There have been numerous review studies conducted on the topic of logging. These studies provide a thorough overview of research, aiming to highlight current methods and technologies while identifying areas for improvement.
+
+In 2021, a systematic mapping study \cite{bib3} examined research papers focusing on log-based software monitoring. The study highlighted a gap in the exploration of application logs compared to system logs, which have been extensively studied. Unlike structured system logs, application logs often lack a standardized format, making it challenging to apply clustering techniques effectively. For further analysis, monitoring systems provide dashboards and metrics to track system performance and detect abnormalities. When anomalies occur, the operations team can visualize these issues and investigate further. Techniques to manage log data volume and efficient querying are crucial for supporting the operations team in diagnosing problems. However, an excessive number of charts and dashboards can overwhelm operators, making it challenging to identify unexpected situations. Operations engineers often rely on experience to interpret unknown patterns on dashboards. \cite{logbasedmonitoring}.
+
+The review paper by Gholamian et al. (2021) \cite{gholamian2021comprehensive} provides a comprehensive overview of state-of-the-art logging research. It examines the costs and benefits of logging, techniques for mining logging statements, automated logging approaches and their evaluation metrics, log file analysis, and emerging applications of logs. The paper also compiles an extensive list of relevant research and outlines future directions, such as log file representation and application-specific logging.
+
+The systematic literature review from 2021 \cite{itinfranomaly} focused on several key aspects: IT infrastructures studied, use of log data for anomaly detection, procedures for managing failure conditions, and automated tools for log analysis. After studying automated log analysis tools, they were compared based on merit criteria such as product type, mode, availability, and industrial utility. Various tools are available, allowing researchers to choose suitable options instead of developing new ones. Commercial tools exist in both open-source and paid versions for log analysis visualization, aiding in troubleshooting. Graylog and Fluentd were mentioned as open-source tools utilized in the industry.
+
+The survey by He et.al \cite{surveyloganalysis} primarily investigates four key steps within the automated log analysis framework: logging, log compression, log parsing, and log mining. It also introduces available datasets and open-source tool kits, such as Graylog, discusses best current practices, and suggests future research directions.
+
+The study by Batoun in 2024 \cite{Batoun2024} integrates a systematic literature review of 204 papers covering the entire logging pipeline—from log creation to analysis—along with qualitative and quantitative analyses of 119 and 20,766 software logging questions from StackOverflow (SO), respectively. This approach aims to provide a comprehensive understanding of the current state of software logging in both research and practice. Additionally, several online discussions address topics not yet explored by the research community, such as the use of specific logging tools and libraries like Graylog or Logcat, as noted by Gujral et al. (2018, 2019, 2022). While extensive research exists on parsing unstructured log data, we recommend that future studies extend these approaches to accommodate complex log formats, such as JSON. Furthermore, we encourage future research to explore diverse contextual factors to enhance the field.
+%whats up with this link?
+https://arxiv.org/pdf/1706.10040
+
+\section{Research Gap}
+
+This master's thesis aims to evaluate the performance of Graylog as a monitoring platform and will delve into the analysis of application logs, an area that deserves attention.
+%whats up with this line?
+log-failure trouble-shooting-guides (TSG) within Graylog
+
+\end{document}

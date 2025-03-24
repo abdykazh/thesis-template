@@ -1,0 +1,48 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\chapter{Discussion}
+
+The maintainability cost investigation revealed that Graylog does not officially offer a Helm chart. However, a community-driven chart was used for the investigation. The simulation was successful until the point where this Graylog chart did not support the latest version, Graylog 6.0. Once an updated chart became available, the installation was successful again for the newer Graylog versions.
+
+OpenSearch and MongoDB were installed using Helm charts without issues. However, for MongoDB, multiple Helm charts were available for the same application version, which required further selection. The Logging Operator installation was successful. Since Rancher was used, the Rancher Logging App was preferred due to its role restriction capabilities. However, multiple issues arose during installation, leading to higher maintainability costs.
+
+Overall, maintainability requires low effort, though prior Kubernetes experience helps reduce complexity. 
+
+Regarding perceived value and usability, different use cases were evaluated. Given the diverse requirements, conducting short interviews or questionnaires proved beneficial in identifying the most important features, aiding in tool selection. The requirements for the centralized logging solution were derived from the company's use cases. The Kano model was used to analyze how different features were perceived by users.
+
+Application Logging
+How the solution is supporting the business or not, the time and effort and energy to go into monitoring and log management´if it is delivering value. Justification?
+
+Search queries
+Multiple pods, history? guestbook pod
+Debugging and Troubleshooting Applications with Graylog in a production env -> see error on visualisation board and put in a coorect search quiery
+
+Visualisation for errors
+
+\section{Practical Implications}
+
+This study provides valuable insights into the implementation and maintainability of a centralized logging solution using Graylog and Logging Operator in a Kubernetes-based environment. The findings suggest that:
+  
+- Maintainability Considerations: While the overall maintainability effort is low, prior experience with Kubernetes and Helm significantly eases deployment and upgrades. The reliance on community-driven Helm charts for Graylog presents a potential risk for long-term support.
+
+- Feature Prioritization: The Kano model analysis highlights which logging features are most valued by users, guiding organizations in selecting and customizing logging tools based on their specific needs.  
+
+- Scalability and Adaptability: The findings demonstrate that the logging solution can be adapted for different team-specific use cases, making it applicable across various departments and teams.  
+
+\section{Limitations of the Study}
+
+- Limited Scope of Evaluation: The study was conducted in a specific organizational setting, and the findings may not fully generalize to other companies with different IT infrastructures. 
+
+- Short-Term Maintainability Assessment: While the study simulated version upgrades, the long-term maintenance effort over multiple years was not fully tested in a real-world environment.
+
+- User Feedback Scope: The usability and perceived value assessment relied on a limited set of interviews and questionnaires, which may not capture the perspectives of all potential users.
+
+- Technical Expertise Requirement: Although the solution reduces manual effort, administrators still require a solid understanding of Kubernetes, Helm, and Rancher for effective management.  
+
+\section{Future Research Directions}
+
+Future work could address these limitations by conducting long-term studies on maintainability, testing alternative logging solutions, and expanding user feedback to a broader audience.  
+
+\end{document}
