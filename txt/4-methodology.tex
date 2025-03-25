@@ -43,9 +43,11 @@ The Graylog website provides a compatibility matrix between Graylog, OpenSearch,
 6.0.x & 5.0.7 & 7.x & 1.1.x (or 1.3.x for Graylog Security) & 2.15.x \\ \hline
 6.1.x & 5.0.7 & 7.x & 1.1.x (or 1.3.x for Graylog Security) & 2.15.x \\ \hline
 \end{tabular}
-\caption{Compatibility Matrix for Graylog versions. Source: https://go2docs.graylog.org/current/downloading\_and\_installing\_graylog/installing\_graylog.html}
+\caption{Compatibility Matrix for Graylog versions. \protect\footnotemark}
 \label{table:graylog_compatibility_matrix}
 \end{table}
+
+\footnotetext{Source: https://go2docs.graylog.org/current/downloading\_and\_installing\_graylog/installing\_graylog.html}
 
 The Appendix contains tables with application versions and release dates of Graylog, MongoDB and OpenSearch sourced from their official websites. The tables were cleaned and the release dates standardized.
 
@@ -205,9 +207,11 @@ As presented in Table~\ref{table:logging_operator_all_versions}, the versions we
         2024-12-19 & Logging Operator 5.0.1 \\
         \hline
     \end{tabular}
-   \caption{Logging Operator versions and release dates (excluding pre-releases). Source: https://github.com/kube-logging/logging-operator/releases}
+   \caption{Logging Operator versions and release dates (excluding pre-releases). \protect\footnotemark}
     \label{table:logging_operator_filtered_versions}
 \end{table}
+
+\footnotetext{Source: https://github.com/kube-logging/logging-operator/releases}
 
 \subsection{Graylog Installation Table}
 
@@ -281,9 +285,11 @@ The Table~\ref{table:graylog_helm_versions} contains Graylog Helm chart release 
     2024-08-09 & Graylog 2.3.9(5.2.6) & MongoDB 13.6.6(6.0.4) & OpenSearch 2.8.0(2.4.0) \\ \hline
     2024-09-27 & Graylog 2.3.10(5.2.6) & MongoDB 13.6.6(6.0.4) & OpenSearch 2.8.0(2.4.0) \\ \hline
 \end{tabular}
-\caption{Community-driven Graylog Helm Chart Versions, Release Dates, and Version Matrix for MongoDB and OpenSearch https://artifacthub.io/packages/helm/kong-z/graylog}
+\caption{Community-driven Graylog Helm Chart Versions, Release Dates, and Version Matrix for MongoDB and OpenSearch \protect\footnotemark}
 \label{table:graylog_helm_versions}
 \end{table}
+
+\footnotetext{Source: https://artifacthub.io/packages/helm/kong-z/graylog}
 
 The following tables were created by merging Table~\ref{table:release_dates}, which contains release dates and versions, with tables listing Helm chart versions to form a comprehensive installation table with Helm charts.
 
@@ -442,9 +448,11 @@ The ClusterOutput is configured to send logs in GELF format, specifying the Gray
 \begin{figure}[h]
         \centering
         \includegraphics[scale=0.9]{img/3-background/centralized_logging/flows_output.png}
-        \caption{Log Routing within Kubernetes cluster. Source: https://kube-logging.dev/docs/img/logging-operator-v2-architecture.png (adjusted) (accessed: 01.03.2025) }
+        \caption{Log Routing within Kubernetes cluster. \protect\footnotemark}
         \label{fig:flows_output}
 \end{figure}
+
+\footnotetext{Source: https://kube-logging.dev/docs/img/logging-operator-v2-architecture.png (adjusted) (accessed: 01.03.2025)}
 
 \subsection{Cluster Configuration: Multiple Flows, One ClusterOutput}
 
@@ -624,5 +632,7 @@ Below there is a limited set of features most relevant to the use cases. While G
 The Kano model questionnaire will be completed using a semi-automatic tool. Each question, based on the titles from the list, will be supplemented with a description, which may include a screenshot from the Graylog application or a software architecture diagram. Additionally, a basic example will be provided, and if necessary, further use case example will be presented to illustrate how the feature can be applied in a relevant way.
 
 \subsection{Kano questionnaire}
+
+The Kano model is used to better understand and prioritize requirements to the centralized logging solution at the company. 
 
 \end{document}
